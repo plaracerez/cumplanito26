@@ -1,12 +1,12 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #cdc12a;
-    color: white;
+    background-color: #ffff00;
+    color: black;
     text-align: center;
     padding: 1em;
 }
@@ -19,11 +19,25 @@ section {
 }
 
 footer {
-    background-color: #cdc12a;
+    background-color: #ffff00;
     color: white;
     text-align: center;
     padding: 1em;
-    position: fixed;
+    position:static;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
 }
+
+
+#carouselExampleCaptions {
+    max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: auto;
+    margin-bottom: 20px; /* Centra el carrusel en la página */
+}
+
+.carousel-inner img {
+    height: 300px; /* Ajusta la altura de las imágenes según tus necesidades */
+    object-fit: cover; /* Hace que las imágenes se ajusten manteniendo su relación de aspecto */
+}
+
