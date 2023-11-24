@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Invitación a mi Cumpleaños!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>¡Estás Invitado a mi Cumpleaños!</h1>
+    </header>
+
+    <section>
+        <form id="invitadosForm">
+            <label for="nombre">Selecciona tu nombre:</label>
+            <select id="nombre" name="nombre">
+                <option value="Fiams">Fiams</option>
+                <option value="Flor F">Flor F</option>
+                <option value="Flor S">Flor S</option>
+                <option value="Vale">Vale</option>
+                <option value="Eli">Eli</option>
+                <option value="Emi">Emi</option>
+                <option value="Jos">Jos</option>
+                <option value="Seba">Seba</option>
+                <option value="Paulina S">Paulina S</option>
+                <option value="Paulina M">Paulina M</option>
+                <option value="Sí hay dos Paulinas">Sí hay dos Paulinas</option>
+                <option value="Isma">Isma</option>
+                <option value="Laure">Laure</option>
+                <option value="Br1">Br1</option>
+                <option value="Agus">Agus</option>
+                <option value="Fede">Fede</option>
+                <option value="Elisit">Elisit</option>
+                <option value="Marquis">Marquis</option>
+                <option value="Ludubra">Ludubra</option>
+                <option value="Mateo">Mateo</option>
+                <option value="Lucas bb">Lucas bb</option>
+                <option value="Cari">Cari</option>
+                <option value="Tati">Tati</option>
+                <option value="Miqueos">Miqueos</option>
+                <option value="Juancito">Juancito</option>
+                <option value="Cari">Cari</option>
+                <option value="Cata">Cata</option>
+
+
+                <!-- Agrega más opciones según tus invitados -->
+            </select>
+            <button type="button" onclick="enviarFormulario()">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>¡Espero verte allí!</p>
+    </footer>
+
+    <script>
+        function enviarFormulario() {
+            // Obtener el nombre seleccionado
+            var nombreSeleccionado = document.getElementById("nombre").value;
+
+            // Redirigir a la página principal con el nombre como parámetro
+            window.location.href = "main.html?nombre=" + nombreSeleccionado;
+        }
+    </script>
+
+</body>
+</html>

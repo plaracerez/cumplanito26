@@ -16,8 +16,14 @@
     </header>
 
     <section>
-        <p>Hola amigos,</p>
-        <p>¡Estoy emocionado de invitarte a mi fiesta de cumpleaños! Será un día lleno de diversión, risas y buena compañía.</p>
+        <header>
+            <h1>Bienvenido a mi Cumpleaños</h1>
+        </header>
+    
+        <section>
+            <p>¡Gracias por confirmar, [nombre]!</p>
+            <!-- Puedes personalizar este mensaje según tus necesidades -->
+        </section>
         <p>Fecha: [Fecha]</p>
         <p>Hora: [Hora]</p>
         <p>Lugar: [Dirección]</p>
@@ -51,5 +57,20 @@
     <footer>
         <p>¡Espero verte allí!</p>
     </footer>
+
+    <script>
+        // Función para obtener parámetros de la URL
+        function obtenerParametro(nombre) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(nombre);
+        }
+    
+        // Obtener el nombre de la URL
+        var nombre = obtenerParametro("nombre");
+    
+        // Mostrar el nombre en el mensaje
+        document.querySelector("section p").innerHTML = "¡Gracias por confirmar, " + nombre + "!";
+    </script>
+    
 </body>
 </html>
