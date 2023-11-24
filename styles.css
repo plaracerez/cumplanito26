@@ -1,13 +1,10 @@
 body {
-    font-family: 'Courier New', monospace;
-    margin: 0;
-    padding: 0;
+    font-family: 'Bitter';
+    font-weight: 1000;
 }
 
 header {
     background-color: #ffff00;
-    color: black;
-    text-align: center;
     padding: 1em;
 }
 
@@ -20,7 +17,6 @@ section {
 
 footer {
     background-color: #ffff00;
-    color: white;
     text-align: center;
     padding: 1em;
     position:static;
