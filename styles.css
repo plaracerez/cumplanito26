@@ -3,7 +3,7 @@ body {
     font-weight: 1000;
 }
 
-header {
+.header {
     background-color: #ffff00;
     padding: 1em;
 }
