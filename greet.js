@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded', function() {
   var nombre = obtenerParametro("nombre");
 
   // Mostrar el nombre en el mensaje
-  document.querySelector("#customGreet").innerHTML = "Holi, " + nombre;
+  document.querySelector("#customGreet").innerHTML = "Holi, " + nombre + " :)";
 });
