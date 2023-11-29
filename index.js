@@ -29,13 +29,29 @@ const nombresArray = [
   ["Vale", "Vale"]
 ];
 
-function enviarFormulario() {
-    // Obtener el nombre seleccionado
-    var nombreSeleccionado = document.getElementById("seleccionNombres").value;
 
-    // Redirigir a la página principal con el nombre como parámetro
-    window.location.href = "greet.html?nombre=" + nombreSeleccionado;
+function enviarFormulario() {
+  // Obtener el nombre seleccionado
+  var nombreSeleccionado = document.getElementById("seleccionNombres").value;
+
+  // Verificar si la opción seleccionada es "Sí hay dos Paulinas"
+  if (nombreSeleccionado === "Sí hay dos Paulinas") {
+      alert("Uy te comiste un payaso 🤡");
+  } else {
+      // Redirigir a la página principal con el nombre como parámetro
+      window.location.href = "greet.html?nombre=" + nombreSeleccionado;
+  }
 }
+
+/*function enviarFormulario() {
+  // Obtener el nombre seleccionado
+  var nombreSeleccionado = document.getElementById("seleccionNombres").value;
+
+  // Redirigir a la página principal con el nombre como parámetro
+  window.location.href = "greet.html?nombre=" + nombreSeleccionado;
+}*/
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
 

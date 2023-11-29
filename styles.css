@@ -24,7 +24,6 @@ footer {
     padding: 1em;
     position:static;
     bottom: 0;
-    width: 100%;
     margin-top: 30px;
     font-weight: 1000;
 }
@@ -35,6 +34,7 @@ footer {
     margin: auto;
     margin-bottom: 20px; /* Centra el carrusel en la página */
 }
+
 
 .carousel-inner img {
     height: 300px; /* Ajusta la altura de las imágenes según tus necesidades */
@@ -54,3 +54,12 @@ footer {
 #carouselExampleControls {
     margin-bottom: 20px;
 }
+
+.enlace-negro {
+    color: black;
+    text-decoration: underline;
+  }
+
+.enlace-negro:hover {
+    color: gray; /* Cambia el color a gris cuando se pasa el ratón sobre el enlace */
+  }
