@@ -17,6 +17,7 @@ const nombresArray = [
   ["Laure", "Laura"],
   ["Lucas", "Lucas bebé"],
   ["Ludubra", "Ludubra"],
+  ["Mamá", "mamucha"],
   ["Marquis", "Marquis"],
   ["Mateo", "Mateo"],
   ["Miqueos", "Miqs"],
